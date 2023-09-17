@@ -8,8 +8,10 @@ STOCK = "USDBRL"
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 news_url = "https://newsapi.org/v2/everything"
 
+#Insert your API that can be found on the respecite websites
 alphavantage_api_key = os.environ.get("alphavantage_api_key")
 news_api_key = os.environ.get("news_api_key")
+
 stock_params_fx_rate = {
     "function": "CURRENCY_EXCHANGE_RATE",
     "from_currency": "BRL",
@@ -43,7 +45,7 @@ my_br_number = os.environ.get("my_br_number")
 today_date = datetime.today()
 # GET YESTERDAY DATE
 yesterday_date = today_date - timedelta(days=1)
-# GET ZAVCHERA
+# GET DAY BEFORE YESTERDAY
 zavchera_date = today_date - timedelta(days=2)
 
 # list of weekend days (sat,sun)
